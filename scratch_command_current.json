@@ -1,0 +1,65 @@
+{
+    "Motion_Blocks": {
+        "Move_()_Steps_(block)": [
+            "THIS_BLOCK moves its sprite forward the specified amount of \"steps\" in the direction it is facing. A step is equal to a one-pixel length. The Default Value is 10 and can be replaced by any number. The block actually uses Trigonometry to move in the proper direction, as this is how a computer handles it.\n"
+        ],
+        "Turn_Right_()_Degrees_(block)": [
+            "THIS_BLOCK changes its sprite's direction by the specified amount of degrees in the clockwise direction. The blocks support any input value from -179 to 180.\n"
+        ],
+        "Turn_Left_()_Degrees_(block)": [
+            "THIS_BLOCK changes its sprite's direction by the specified amount of degrees in the counter-clockwise. The blocks support any input value from -179 to 180.\n"
+        ],
+        "Go_to_()_(block)": [
+            "THIS_BLOCK sets its sprite's X and Y position to the specified position, which can be that of another sprite, the mouse pointer, or random coordinates.\n"
+        ],
+        "Go_to_X:_()_Y:_()_(block)": [
+            "THIS_BLOCK sets its sprite's X and Y position to the specified amounts. This block is related to the Set X to () and the Set Y to () blocks \u2014 it is the same as the two blocks combined, as shown in the workaround.\n"
+        ],
+        "Glide_()_Secs_to_()_(block)": [
+            "THIS_BLOCK moves its sprite at a steady pace to the specified sprite or the mouse-pointer from a drop-down - this is similar to the sprite in a direction and repeatedly using Move () Steps, but with more precision. The first space is a number input, and the second space can set to a sprite, random position, and mouse-pointer.  A downside to the block is that, while gliding, it pauses the script so that nothing else can happen during this time.  A glide can only be interrupted by the Stop () block, and the If on Edge, Bounce block will fail to work its intended function while a sprite is gliding.\n"
+        ],
+        "Glide_()_Secs_to_X:_()_Y:_()_(block)": [
+            "THIS_BLOCK moves its sprite to the chosen x and y coordinates respective to the chosen seconds. A disadvantage of the glide block, however, is that it pauses the script while the sprite is moving, preventing the script from doing other things while the sprite is gliding. Also, a glide can only be interrupted by a stopping scripts block, and the If on Edge, Bounce block will fail to work its intended function while a sprite is gliding.\n"
+        ],
+        "Point_in_Direction_()_(block)": [
+            "The point in direction () block is a stack block and a Motion block. The block points its sprite in the specified direction, rotating the sprite.\nThe blocks use the 360 degrees in a circle. The Default Value is 90 and can be replaced by any Number (360+x displays the same than 0+x). When the input is clicked, a circle appears where one can select a direction.\n",
+            "There has been some confusion involving the number system due to the fact that 0 is straight up, rather than off to the right (the default direction) or off to the left (as in a protractor), and that it uses a -180 to 180 circle rather than a normal 360 degree circle. Despite complaints,[1] no changes have been made.\n",
+            "If a sprite must be turned and its direction is not known, this block can be used.\n",
+            "Some common uses for the point in direction () block  are:\n",
+            "The blocks can be replicated by turning the needed amount of degrees:\n"
+        ],
+        "Point_Towards_()_(block)": [
+            "THIS_BLOCK points its sprite towards the mouse-pointer or the costume center of another sprite.\n Unlike the Point in Direction () block, which does not point sprites at specific objects, the Point Towards () block can point sprites at other sprites or the mouse pointer.\n"
+        ],
+        "Change_X_by_()_(block)": [
+            "THIS_BLOCK changes the X Position of the sprite that uses it by the number specified. The X axis ranges from -240 to 240, but sprites can be moved further.\n"
+        ],
+        "Set_X_to_()_(block)": [
+            "THIS_BLOCK changes the selected sprite's X position to the specified value. Along with the Set Y to () block, this block acts similarly to the Go to X: () Y: () block.\n"
+        ],
+        "Change_Y_by_()_(block)": [
+            "THIS_BLOCK moves its sprite's Y position by the specified amount.\n Often in games, the player controls a sprite and moves it around, such as with velocity. In this way, the change y by () block (and the change x by () block) can become very useful. The Y axis ranges from -180 to 180, but sprites can be moved further.\n"
+        ],
+        "Set_Y_to_()_(block)": [
+            "THIS_BLOCK sets its sprite's Y position to the specified amount. This block, combined with the Set X to () block, have the same effect as the Go to X: () Y: () block.\n"
+         ],
+        "If_on_Edge,_Bounce_(block)": [
+            "THIS_BLOCK checks to see if its sprite is touching the edge of the screen with the move () steps block \u2014 and if it is, the sprite will point in a direction that mirrors the direction from which it was coming. It uses a line perpendicular to the edge to determine the reflection angle.\n"
+        ],
+        "Set_Rotation_Style_()_(block)": [
+            "THIS_BLOCK changes the Rotation Style of the sprite in-project. Regardless of the style, the variable direction will still change.\n"
+        ],
+        "X_Position_(block)": [
+            "THIS_BLOCK holds its sprite's x value, the sprite\u2019s horizontal location on the stage. The block can be displayed as a stage monitor.\n"
+        ],
+        "Y_Position_(block)": [
+            "THIS_BLOCK holds its Sprite's Y position. This block can be displayed as a Stage monitor.\n",
+            "Another use is setting values based on a movable slider. The script sets the value to the slider's Y position.\n",
+            "Other common uses are:\n",
+            "The block can be simply replicated with the following block:\n",
+            "However, as this workaround requires the ([ v] of ( v)) block, it cannot be used to get the Y position of the current sprite and must be done from another sprite, unless this workaround is used:\n"
+        ],
+        "Direction_(block)": [
+            "THIS_BOCK holds its Sprite's direction, measured in degrees. This direction value is controlled by the Point in Direction () block.\n"
+        ]
+    }
